@@ -1,0 +1,3 @@
+[submodule "psyq/tools/mkpsxiso"]
+	path = psyq/tools/mkpsxiso
+	url = https://github.com/Lameguy64/mkpsxiso
