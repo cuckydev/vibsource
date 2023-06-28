@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<iso_project image_name="${CD_BIN}" cue_sheet="${CD_CUE}">
+	<track type="data">
+		<identifiers system="PLAYSTATION" application="PLAYSTATION" creation_date="1999102022403300+36"/>
+		<license file="${ISO_DIR}/license_data.dat"/>
+		<default_attributes gmt_offs="36" xa_attrib="0" xa_perm="1365" xa_gid="0" xa_uid="0"/>
+		<directory_tree>
+			<file name="SYSTEM.CNF" source="${ISO_DIR}/SYSTEM.CNF" type="data"/>
+			<dummy sectors="476"/>
+			<file name="MAIN_G.EXE" source="${ISO_DIR}/MAIN_G.EXE" type="data"/>
+			<dummy sectors="317"/>
+			<file name="MAIN_K.EXE" source="${ISO_DIR}/MAIN_K.EXE" type="data"/>
+			<dummy sectors="419"/>
+			<file name="MAIN_T.EXE" source="${TITLE_EXE}" type="data"/>
+			<dir name="GAME" source="${ISO_DIR}/GAME">
+				<file name="FILES.PAK" source="${ISO_DIR}/GAME/FILES.PAK" type="data"/>
+				<dir name="AUDIO" source="${ISO_DIR}/GAME/AUDIO">
+					<file name="PSJ_SE.VB" source="${ISO_DIR}/GAME/AUDIO/PSJ_SE.VB" type="data"/>
+					<file name="PSJ_SE.VH" source="${ISO_DIR}/GAME/AUDIO/PSJ_SE.VH" type="data"/>
+				</dir>
+			</dir>
+			<dir name="KIOSK" source="${ISO_DIR}/KIOSK">
+				<file name="FILES.PAK" source="${ISO_DIR}/KIOSK/FILES.PAK" type="data"/>
+				<dir name="AUDIO" source="${ISO_DIR}/KIOSK/AUDIO">
+					<file name="KIOSK.VB" source="${ISO_DIR}/KIOSK/AUDIO/KIOSK.VB" type="data"/>
+					<file name="KIOSK.VH" source="${ISO_DIR}/KIOSK/AUDIO/KIOSK.VH" type="data"/>
+				</dir>
+			</dir>
+			<dir name="TITLE" source="${ISO_DIR}/TITLE">
+				<file name="FILES.PAK" source="${ISO_DIR}/TITLE/FILES.PAK" type="data"/>
+				<dir name="AUDIO" source="${ISO_DIR}/TITLE/AUDIO">
+					<file name="TITLE.VB" source="${ISO_DIR}/TITLE/AUDIO/TITLE.VB" type="data"/>
+					<file name="TITLE.VH" source="${ISO_DIR}/TITLE/AUDIO/TITLE.VH" type="data"/>
+				</dir>
+			</dir>
+			<file name="SCPS_180.12" source="${VIBLOADER_EXE}" type="data"/>
+
+			<file name="02.DA" trackid="02" type="da"/>
+			<file name="03.DA" trackid="03" type="da"/>
+			<file name="04.DA" trackid="04" type="da"/>
+			<file name="05.DA" trackid="05" type="da"/>
+			<file name="06.DA" trackid="06" type="da"/>
+			<file name="07.DA" trackid="07" type="da"/>
+			<file name="08.DA" trackid="08" type="da"/>
+		</directory_tree>
+	</track>
+
+	<track type="audio" trackid="02" source="${ISO_DIR}/track2.wav">
+		<pregap duration="00:04:04"/>
+	</track>
+	<track type="audio" trackid="03" source="${ISO_DIR}/track3.wav">
+		<pregap duration="00:02:03"/>
+	</track>
+	<track type="audio" trackid="04" source="${ISO_DIR}/track4.wav">
+		<pregap duration="00:02:31"/>
+	</track>
+	<track type="audio" trackid="05" source="${ISO_DIR}/track5.wav">
+		<pregap duration="00:02:00"/>
+	</track>
+	<track type="audio" trackid="06" source="${ISO_DIR}/track6.wav">
+		<pregap duration="00:02:18"/>
+	</track>
+	<track type="audio" trackid="07" source="${ISO_DIR}/track7.wav">
+		<pregap duration="00:02:66"/>
+	</track>
+	<track type="audio" trackid="08" source="${ISO_DIR}/track8.wav">
+		<pregap duration="00:02:61"/>
+	</track>
+</iso_project>

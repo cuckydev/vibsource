@@ -1,0 +1,7 @@
+build
+out
+psyq/lib
+psyq/include
+iso
+.vs
+.vscode
